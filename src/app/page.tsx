@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="h-screen overflow-y-scroll scroll-snap-y scroll-snap-proximity scroll-smooth">
       {/* Hero Section */}
-      <section className="relative h-screen scroll-snap-start flex items-center justify-center">
+      <section className="relative h-screen scroll-snap-start flex items-center justify-center pb-20">
         {/* Background Image */}
         <div className="absolute inset-0">
           <div className="mx-auto grid max-w-[1065px] grid-cols-12 gap-[15px] h-full">
@@ -125,7 +125,7 @@ export default function Home() {
       {/* Contact Me */}
       <section
         id="contact"
-        className="min-h-screen scroll-snap-start flex items-center justify-center px-4 py-20"
+        className="min-h-screen scroll-snap-start flex items-center justify-center px-4 pt-20"
       >
         <div className="mx-auto max-w-[1065px] text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-poppins)] font-semibold text-[var(--text)]">
