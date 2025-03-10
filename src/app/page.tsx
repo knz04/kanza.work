@@ -110,7 +110,7 @@ export default function Home() {
               <ProjectCard
                 key={project}
                 name={project}
-                className="aspect-[16/9]"
+                className="aspect-[16/9] "
               />
             ))}
           </div>

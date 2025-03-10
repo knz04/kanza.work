@@ -31,7 +31,7 @@ export const ProjectCard = ({ name, className }: ProjectCardProps) => (
           objectFit="cover"
         />
       </div>
-      <p className="text-base font-[family-name:var(--font-space-mono)] text-[var(--text)] my-2 hover:underline hover:cursor-pointer">
+      <p className="text-base font-[family-name:var(--font-space-mono)] text-[var(--text)] my-2 underline md:no-underline hover:underline hover:cursor-pointer">
         {name}
       </p>
     </Link>
