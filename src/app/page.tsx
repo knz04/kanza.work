@@ -135,7 +135,7 @@ export default function Home() {
             Email:{" "}
             <Link
               href="mailto:work.knz04@gmail.com"
-              className="hover:underline"
+              className="underline md:no-underline hover:underline"
             >
               work.knz04@gmail.com
             </Link>
@@ -144,7 +144,7 @@ export default function Home() {
             <Link
               href="https://www.linkedin.com/in/kanza-amanda/"
               target="_blank"
-              className="hover:underline"
+              className="underline md:no-underline hover:underline"
             >
               kanza-amanda
             </Link>
@@ -153,7 +153,7 @@ export default function Home() {
             <Link
               href="https://github.com/knz04"
               target="_blank"
-              className="hover:underline"
+              className="underline md:no-underline hover:underline"
             >
               knz04
             </Link>
