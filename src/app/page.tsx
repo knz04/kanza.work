@@ -71,7 +71,7 @@ export default function Home() {
       {/* About Me */}
       <section
         id="about"
-        className="min-h-screen scroll-snap-start flex items-center justify-center px-4"
+        className="min-h-screen scroll-snap-start flex items-center justify-center px-4 py-20"
       >
         <div className="mx-auto max-w-[1065px] grid grid-cols-1 md:grid-cols-2 gap-6">
           <SectionHeader
@@ -98,7 +98,7 @@ export default function Home() {
       {/* Projects */}
       <section
         id="projects"
-        className="min-h-screen scroll-snap-start flex items-center justify-center px-4"
+        className="min-h-screen scroll-snap-start flex items-center justify-center px-4 py-20"
       >
         <div className="mx-auto max-w-[1065px]">
           <SectionHeader
@@ -125,7 +125,7 @@ export default function Home() {
       {/* Contact Me */}
       <section
         id="contact"
-        className="min-h-screen scroll-snap-start flex items-center justify-center px-4"
+        className="min-h-screen scroll-snap-start flex items-center justify-center px-4 py-20"
       >
         <div className="mx-auto max-w-[1065px] text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-poppins)] font-semibold text-[var(--text)]">
