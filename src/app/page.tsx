@@ -31,19 +31,18 @@ export default function Home() {
 
   return (
     <main className="h-screen overflow-y-scroll scroll-snap-y scroll-snap-proximity scroll-smooth">
-      {/* Hero Section */}
+      {/* Hero Section  */}
       <section className="h-screen scroll-snap-start flex items-center justify-center">
-        <div className="mx-auto grid max-w-[1065px] grid-cols-[repeat(12,75px)] gap-[15px]">
-          <div className="col-span-8">
-            <h1 className="text-[60px] font-[family-name:var(--font-poppins)] font-semibold text-[var(--text)]">
+        <div className="mx-auto grid max-w-[1065px] grid-cols-12 gap-[15px]">
+          <div className="col-span-12 md:col-span-10 lg:col-span-8">
+            <h1 className="text-4xl md:text-5xl lg:text-[60px] font-[family-name:var(--font-poppins)] font-semibold text-[var(--text)]">
               I'm Kanza, <br />a full-stack developer <br />
               based in Indonesia.
             </h1>
           </div>
-
-          <div className="col-span-3 col-start-1">
+          <div className="col-span-12 md:col-span-6 3xl:col-span-3 col-start-1">
             <Link href="#about">
-              <Button className="px-19">
+              <Button>
                 <p>Learn More</p>
               </Button>
             </Link>
@@ -54,33 +53,25 @@ export default function Home() {
       {/* About Me */}
       <section
         id="about"
-        className="h-screen scroll-snap-start flex items-center justify-center"
+        className="h-screen scroll-snap-start flex items-center justify-center px-4"
       >
-        <div className="mx-auto grid max-w-[1065px] grid-cols-[repeat(12,75px)] gap-[15px]">
+        <div className="mx-auto max-w-[1065px] grid grid-cols-1 md:grid-cols-2 gap-6">
           <SectionHeader
             title="About Me"
             subtitle="Full-Stack Developer / Computer Engineering Student / Language Enthusiast"
           />
-
           <ListSection title="Tech Stack" items={techStack} />
           <ListSection title="Education" items={education} />
           <ListSection title="Languages" items={languages} />
-
-          <div className="col-span-3 col-start-1">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link href="#projects">
-              <Button className="px-15">
-                <p>View Projects</p>
-              </Button>
+              <Button>View Projects</Button>
             </Link>
-          </div>
-          <div className="col-span-3 col-start-4">
             <Link
               href="https://docs.google.com/document/d/1lLr_0ihYTU_xXiV86JEqcMu9aZYmRkWECI2mivtpOH4/edit?usp=sharing"
               target="_blank"
             >
-              <Button className="px-22">
-                <p>View CV</p>
-              </Button>
+              <Button>View CV</Button>
             </Link>
           </div>
         </div>
@@ -89,27 +80,25 @@ export default function Home() {
       {/* Projects */}
       <section
         id="projects"
-        className="h-screen scroll-snap-start flex items-center justify-center"
+        className="h-screen scroll-snap-start flex items-center justify-center px-4"
       >
-        <div className="mx-auto grid max-w-[1065px] grid-cols-[repeat(12,75px)] gap-[15px]">
+        <div className="mx-auto max-w-[1065px]">
           <SectionHeader
             title="Projects"
             subtitle="These are my most recent projects."
           />
-
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={project}
-              name={project}
-              className={`col-span-3 col-start-${index * 3 + 1}`}
-            />
-          ))}
-
-          <div className="col-span-4 col-start-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            {projects.map((project) => (
+              <ProjectCard
+                key={project}
+                name={project}
+                className="aspect-[16/9]"
+              />
+            ))}
+          </div>
+          <div className="flex justify-center mt-6">
             <Link href="#contact">
-              <Button className="px-15">
-                <p>Let's Collaborate!</p>
-              </Button>
+              <Button>Let's Collaborate!</Button>
             </Link>
           </div>
         </div>
@@ -118,41 +107,39 @@ export default function Home() {
       {/* Contact Me */}
       <section
         id="contact"
-        className="h-screen scroll-snap-start flex items-center justify-center"
+        className="h-screen scroll-snap-start flex items-center justify-center px-4"
       >
-        <div className="mx-auto grid max-w-[1065px] grid-cols-[repeat(12,75px)] gap-[15px]">
-          <div className="col-span-12 col-start-1">
-            <h2 className="text-5xl font-[family-name:var(--font-poppins)] font-semibold text-[var(--text)]">
-              Contact Me
-            </h2>
-            <p className="text-base font-[family-name:var(--font-inter)] font-light text-[var(--text)] my-2">
-              Email:{" "}
-              <Link
-                href="mailto:work.knz04@gmail.com"
-                className="hover:underline"
-              >
-                work.knz04@gmail.com
-              </Link>
-              <br />
-              LinkedIn:{" "}
-              <Link
-                href="https://www.linkedin.com/in/kanza-amanda/"
-                target="_blank"
-                className="hover:underline"
-              >
-                https://www.linkedin.com/in/kanza-amanda/
-              </Link>
-              <br />
-              GitHub:{" "}
-              <Link
-                href="https://github.com/knz04"
-                target="_blank"
-                className="hover:underline"
-              >
-                https://github.com/knz04
-              </Link>
-            </p>
-          </div>
+        <div className="mx-auto max-w-[1065px] text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[var(--text)]">
+            Contact Me
+          </h2>
+          <p className="text-sm md:text-base text-[var(--text)] mt-4">
+            Email:{" "}
+            <Link
+              href="mailto:work.knz04@gmail.com"
+              className="hover:underline"
+            >
+              work.knz04@gmail.com
+            </Link>
+            <br />
+            LinkedIn:{" "}
+            <Link
+              href="https://www.linkedin.com/in/kanza-amanda/"
+              target="_blank"
+              className="hover:underline"
+            >
+              kanza-amanda
+            </Link>
+            <br />
+            GitHub:{" "}
+            <Link
+              href="https://github.com/knz04"
+              target="_blank"
+              className="hover:underline"
+            >
+              knz04
+            </Link>
+          </p>
         </div>
       </section>
     </main>
