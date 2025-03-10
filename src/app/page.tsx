@@ -3,6 +3,7 @@ import { ListSection } from "@/app/components/listsection";
 import { ProjectCard } from "@/app/components/projectcard";
 import { SectionHeader } from "@/app/components/sectionheader";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const techStack = [
@@ -31,21 +32,38 @@ export default function Home() {
 
   return (
     <main className="h-screen overflow-y-scroll scroll-snap-y scroll-snap-proximity scroll-smooth">
-      {/* Hero Section  */}
-      <section className="h-screen scroll-snap-start flex items-center justify-center">
-        <div className="mx-auto grid max-w-[1065px] grid-cols-12 gap-[15px]">
-          <div className="col-span-12 md:col-span-10 lg:col-span-8">
-            <h1 className="text-4xl md:text-5xl lg:text-[60px] font-[family-name:var(--font-poppins)] font-semibold text-[var(--text)]">
-              I'm Kanza, <br />a full-stack developer <br />
-              based in Indonesia.
-            </h1>
+      {/* Hero Section */}
+      <section className="relative h-screen scroll-snap-start flex items-center justify-center">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <div className="mx-auto grid max-w-[1065px] grid-cols-12 gap-[15px] h-full">
+            <div className="col-start-6 col-span-7 relative">
+              <Image
+                src="/Pikku.svg"
+                alt="Pikku Background"
+                layout="fill"
+                objectFit="contain"
+                className="opacity-50" // Adjust opacity as needed
+              />
+            </div>
           </div>
-          <div className="col-span-12 md:col-span-6 3xl:col-span-3 col-start-1">
-            <Link href="#about">
-              <Button>
-                <p>Learn More</p>
-              </Button>
-            </Link>
+        </div>
+        {/* Foreground Content */}
+        <div className="relative z-10 w-full">
+          <div className="mx-auto grid max-w-[1065px] grid-cols-12 gap-[15px]">
+            <div className="col-span-12 md:col-span-10 lg:col-span-8">
+              <h1 className="text-4xl md:text-5xl lg:text-[60px] font-[family-name:var(--font-poppins)] font-semibold text-[var(--text)]">
+                I'm Kanza, <br />a full-stack developer <br />
+                based in Indonesia.
+              </h1>
+            </div>
+            <div className="col-span-12 md:col-span-6 3xl:col-span-3 col-start-1">
+              <Link href="#about">
+                <Button>
+                  <p>Learn More</p>
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
