@@ -53,7 +53,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-[1065px] grid-cols-12 gap-[15px]">
             <div className="col-span-12 md:col-span-10 lg:col-span-8">
               <h1 className="text-4xl md:text-5xl lg:text-[60px] font-[family-name:var(--font-poppins)] font-semibold text-[var(--text)]">
-                I'm Kanza, <br />a full-stack developer <br />
+                I&apos;m Kanza, <br />a full-stack developer <br />
                 based in Indonesia.
               </h1>
             </div>
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center mt-6">
             <Link href="#contact">
-              <Button>Let's Collaborate!</Button>
+              <Button>Let&apos;s Collaborate!</Button>
             </Link>
           </div>
         </div>
