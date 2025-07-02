@@ -20,7 +20,7 @@ export default function Home() {
   const languages = [
     "Bahasa Indonesia: Native",
     "English: Fluent (IB Diploma English A SL – Grade 6/7)",
-    "Japanese: Proficient (JLPT N2 – Top 95.9% globally)",
+    "Japanese: Proficient (JLPT N2 – 152/180 Total score)",
   ];
 
   const projects = [
