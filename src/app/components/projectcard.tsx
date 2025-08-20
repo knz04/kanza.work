@@ -7,6 +7,7 @@ interface ProjectCardProps {
 }
 
 const projectImages: { [key: string]: string } = {
+  "U-Journal": "/ujournal.webp",
   "Ironclad Solutions LLC": "/ironclad.webp",
   "Ayam Tracker": "/ayamtracker.webp",
   Pawfrend: "/pawfrend.webp",
@@ -15,6 +16,7 @@ const projectImages: { [key: string]: string } = {
 };
 
 const projectLinks: { [key: string]: string } = {
+  "U-Journal": "https://github.com/knz04/U-Journal",
   "Ironclad Solutions LLC": "https://www.ironcladsolutionsfl.com",
   "Ayam Tracker": "https://ayamtracker.vercel.app",
   Pawfrend: "https://pawfrend.vercel.app",
