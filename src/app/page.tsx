@@ -24,6 +24,7 @@ export default function Home() {
   ];
 
   const projects = [
+    "Ironclad Solutions LLC",
     "Ayam Tracker",
     "Pawfrend",
     "SketchMIDI",
